@@ -1,0 +1,14 @@
+﻿@model List<ASP.Net_MVC_Framework.Models.Auteur>
+
+@{
+    ViewBag.Title = "Auteurs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Liste des auteurs :</h2>
+
+@foreach (var auteur in Model)
+{
+    <p>@auteur.nom</p>
+}
+
